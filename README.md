@@ -132,6 +132,6 @@ of how to use the grid
 ![desktop](https://i.imgur.com/73r4tul.png)
 * On tablet:
 ![tablet](http://i.imgur.com/h4ChQlj.png)
-*On mobile:
+* On mobile:
 ![mobile-1](https://i.imgur.com/oQv6on0.png)
 ![mobile-2](https://i.imgur.com/PixTV2W.png)
