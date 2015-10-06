@@ -110,11 +110,11 @@ be looking at [Zurb's Foundation](http://foundation.zurb.com/). It comes with a 
 * For this exercise though, we will be doing the layouts manually, just to see there is no magic involved.
 * In this exercise we will be creating a responsive image thumbnail gallery.
 * The result should look like this on desktop:
-![exercise-3-desktop](https://i.imgur.com/YAydktA.png)
+* ![exercise-3-desktop](https://i.imgur.com/YAydktA.png)
 * The result should look like this on a tablet:
-![exercise-3-tablet](https://i.imgur.com/hCUKDBJ.png)
+* ![exercise-3-tablet](https://i.imgur.com/hCUKDBJ.png)
 * The result should look like this on a mobile:
-![exercise-3-mobile](https://i.imgur.com/7gtkfso.png)
+* ![exercise-3-mobile](https://i.imgur.com/7gtkfso.png)
 * **NOTE**: You will need to add the following line to the `head` of your HTML document
 
 ## Exercise 4: Foundation version of the gallery
@@ -129,9 +129,9 @@ be looking at [Zurb's Foundation](http://foundation.zurb.com/). It comes with a 
 of how to use the grid
 * Create the following page using Foundation's responsive grid
 * On desktop:
-![desktop](https://i.imgur.com/73r4tul.png)
+* ![desktop](https://i.imgur.com/73r4tul.png)
 * On tablet:
-![tablet](http://i.imgur.com/h4ChQlj.png)
+* ![tablet](http://i.imgur.com/h4ChQlj.png)
 * On mobile:
-![mobile-1](https://i.imgur.com/oQv6on0.png)
-![mobile-2](https://i.imgur.com/PixTV2W.png)
+* ![mobile-1](https://i.imgur.com/oQv6on0.png)
+* ![mobile-2](https://i.imgur.com/PixTV2W.png)
