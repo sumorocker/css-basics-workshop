@@ -115,7 +115,10 @@ be looking at [Zurb's Foundation](http://foundation.zurb.com/). It comes with a 
 * ![exercise-3-tablet](https://i.imgur.com/hCUKDBJ.png)
 * The result should look like this on a mobile:
 * ![exercise-3-mobile](https://i.imgur.com/7gtkfso.png)
-* **NOTE**: You will need to add the following line to the `head` of your HTML document
+* **NOTE**: You will need to add the following line to the `head` of your HTML document:
+```html
+<meta name="viewport" content="width=device-width">
+```
 
 ## Exercise 4: Foundation version of the gallery
 * We are going to be re-doing our responsive gallery using exclusively Foundation's library
