@@ -76,8 +76,12 @@ do it every time, or commit it once to master and branch off of there. Your choi
     <button class="dialog-box__close"></button>
 </aside>
 ```
-* Using CSS, make the dialog box look like this:
+
+Using CSS, make the dialog box look like this:
 ![exercise-2](https://i.imgur.com/xSQLLaB.png)
+
+---
+
 * Here are a few indications to get you started:
   * The style of writing in this HTML is inspired from BEM. [Read about BEM](https://css-tricks.com/bem-101/) on your own
   time for educational purposes. Basically, each stylable element is assigned a class name based on the "component" it is in.
@@ -103,20 +107,32 @@ do it every time, or commit it once to master and branch off of there. Your choi
   * Make sure the content is spaced away from the borders of its containers.
   * You will need to remove the default margin on the `h1` element
 
+---
+
 ## Exercise 3: CSS Layouts and Media Queries
-* In this exercise we will be creating a responsive image thumbnail gallery.
-* The result should look like this on desktop:
-* ![exercise-3-desktop](https://i.imgur.com/YAydktA.png)
-* The result should look like this on a tablet:
-* ![exercise-3-tablet](https://i.imgur.com/hCUKDBJ.png)
-* The result should look like this on a mobile:
-* ![exercise-3-mobile](https://i.imgur.com/7gtkfso.png)
+In this exercise we will be creating a responsive image thumbnail gallery.
+
+The result should look like this on desktop:
+![exercise-3-desktop](https://i.imgur.com/YAydktA.png)
+
+---
+
+The result should look like this on a tablet:
+![exercise-3-tablet](https://i.imgur.com/hCUKDBJ.png)
+
+---
+
+The result should look like this on a mobile:
+![exercise-3-mobile](https://i.imgur.com/7gtkfso.png)
+
 * **NOTE**: You will need to add the following line to the `head` of your HTML document:
 ```html
 <meta name="viewport" content="width=device-width">
 ```
 
-## Exercise 5: Responsive, mobile-first layout
+---
+
+## Exercise 4: Responsive, mobile-first layout
 One common technique when building web pages or small applications is to go "mobile-first". In terms of styling and UX, this means we would first design the page as it's meant to look on a mobile device, and then work our way up to add artifices for the larger devices (tablets, desktops, maybe TVs!)
 
 In terms of using media queries to achieve this, it means that our regular CSS would be the base CSS across all our devices, and then we would mostly write `min-width` media queries to target larger and larger screen sizes.
@@ -125,16 +141,25 @@ One thing we have to do before getting started is choosing our **breakpoints** c
 
 Setting these breakpoints from the beginning means we don't have to do any guess work when writing our styles.
 
-* Reproduce the following page with a mobile, tablet and desktop layout
-* On desktop:
-* ![desktop](https://i.imgur.com/73r4tul.png)
-* On tablet:
-* ![tablet](http://i.imgur.com/h4ChQlj.png)
-* On mobile:
-* ![mobile-1](https://i.imgur.com/oQv6on0.png)
-* ![mobile-2](https://i.imgur.com/PixTV2W.png)
+Reproduce the following page with a mobile, tablet and desktop layout.
 
-## Exercise 6 (challenge-y): responsive grid!
+On desktop:
+![desktop](https://i.imgur.com/73r4tul.png)
+
+---
+
+On tablet:
+![tablet](http://i.imgur.com/h4ChQlj.png)
+
+---
+
+On mobile:
+![mobile-1](https://i.imgur.com/oQv6on0.png)
+![mobile-2](https://i.imgur.com/PixTV2W.png)
+
+---
+
+## Exercise 5 (challenge-y): responsive grid!
 For this challenging exercise, we will be reproducing a **basic version** of [Foundation's responsive grid](http://foundation.zurb.com/grid.html).
 
 Zurb's Foundation is a CSS framework. Basically, it defines CSS rules for a ton of classes, and lets you use these classes in your HTML to achieve some effects like nice looking buttons, dropdown menus, etc.
