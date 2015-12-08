@@ -42,6 +42,7 @@ because the browser's default box sizing model (`content-box`) adds paddings and
 do it every time, or commit it once to master and branch off of there. Your choice.
 * Commit/push and make a pull request
 * Your end-result should look somewhat like this:
+
 ![exercise 1](https://i.imgur.com/NutCbP6.png)
 
 ## Exercise 2: CSS Positioning and Box Model
@@ -78,6 +79,7 @@ do it every time, or commit it once to master and branch off of there. Your choi
 ```
 
 Using CSS, make the dialog box look like this:
+
 ![exercise-2](https://i.imgur.com/xSQLLaB.png)
 
 ---
@@ -113,16 +115,19 @@ Using CSS, make the dialog box look like this:
 In this exercise we will be creating a responsive image thumbnail gallery.
 
 The result should look like this on desktop:
+
 ![exercise-3-desktop](https://i.imgur.com/YAydktA.png)
 
 ---
 
 The result should look like this on a tablet:
+
 ![exercise-3-tablet](https://i.imgur.com/hCUKDBJ.png)
 
 ---
 
 The result should look like this on a mobile:
+
 ![exercise-3-mobile](https://i.imgur.com/7gtkfso.png)
 
 * **NOTE**: You will need to add the following line to the `head` of your HTML document:
@@ -144,17 +149,21 @@ Setting these breakpoints from the beginning means we don't have to do any guess
 Reproduce the following page with a mobile, tablet and desktop layout.
 
 On desktop:
+
 ![desktop](https://i.imgur.com/73r4tul.png)
 
 ---
 
 On tablet:
+
 ![tablet](http://i.imgur.com/h4ChQlj.png)
 
 ---
 
 On mobile:
+
 ![mobile-1](https://i.imgur.com/oQv6on0.png)
+
 ![mobile-2](https://i.imgur.com/PixTV2W.png)
 
 ---
