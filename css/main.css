@@ -48,3 +48,30 @@ a {
     margin-top:60px;
 }
 
+.dialog-box {
+    background-color: #d2d2d2;
+    padding-bottom:1px;
+    margin:15px;
+}
+.dialog-box__title {
+    padding:5px;
+    padding-left:17px;
+    font-family:serif;
+    
+}
+.dialog-box__content {
+    background-color: #f2f2f2;
+    margin:20px;
+    padding-top:20px;
+    padding:10px;
+    font-family:serif;
+    
+}
+.dialog-box__close {
+    border: 2px solid white;
+    background-color: tomato;
+    width: 24px;
+    height: 24px;
+    float:right;
+    margin:10px;
+}
