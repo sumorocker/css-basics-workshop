@@ -1,77 +1,50 @@
 /* write your css here */
 
 html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: border-box;
 }
 
-body{
-    margin:0;
-    padding:0;
-    position:relative;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
-
-
-.menu ul{
-    margin:0;
-    padding:0.5em;
-    background-color:hsla(0, 0%, 0%, 0.5);
-    position:fixed;
-    top:0;
-    width:100%;
-}
-
-.menu li{
-    list-style-type:none;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    font-family: sans-serif;
-    color:white;
-    border-color:white;
-    border-width:2px;
-    border-style:solid;
-    padding: 0.5em;
-    line-height: 1;
-}
-
-a {
-    text-decoration:none;
-    color:white;
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 
 
-.content{
-    margin-top:60px;
+
+
+@media screen and (min-width:400px){
+img {
+    float: left;
+    width: 100%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+}
 }
 
-.dialog-box {
-    background-color: #d2d2d2;
-    padding-bottom:1px;
-    margin:15px;
+@media screen and (min-width:800px){
+img {
+    float: left;
+    width: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
 }
-.dialog-box__title {
-    padding:5px;
-    padding-left:17px;
-    font-family:serif;
-    
 }
-.dialog-box__content {
-    background-color: #f2f2f2;
-    margin:20px;
-    padding-top:20px;
-    padding:10px;
-    font-family:serif;
-    
+
+@media screen and (min-width:900px){
+img {
+    float: left;
+    width: 33.33333%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
 }
-.dialog-box__close {
-    border: 2px solid white;
-    background-color: tomato;
-    width: 24px;
-    height: 24px;
-    float:right;
-    margin:10px;
 }
