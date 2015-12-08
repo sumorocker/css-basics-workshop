@@ -104,10 +104,6 @@ do it every time, or commit it once to master and branch off of there. Your choi
   * You will need to remove the default margin on the `h1` element
 
 ## Exercise 3: CSS Layouts and Media Queries
-* **NOTE**: As you are doing this exercise, take note of how painful it is to do a responsive layout. In general, when
-building pages, we will be using a CSS library such as Twitter's Bootstrap or Zurb's Foundation. In this class we will
-be looking at [Zurb's Foundation](http://foundation.zurb.com/). It comes with a complete [documentation](http://foundation.zurb.com/docs/)
-* For this exercise though, we will be doing the layouts manually, just to see there is no magic involved.
 * In this exercise we will be creating a responsive image thumbnail gallery.
 * The result should look like this on desktop:
 * ![exercise-3-desktop](https://i.imgur.com/YAydktA.png)
@@ -120,17 +116,16 @@ be looking at [Zurb's Foundation](http://foundation.zurb.com/). It comes with a 
 <meta name="viewport" content="width=device-width">
 ```
 
-## Exercise 4: Foundation version of the gallery
-* We are going to be re-doing our responsive gallery using exclusively Foundation's library
-* [Download the foundation esentials](http://foundation.zurb.com/develop/download.html) and extract the file `foundation.css`
-* Add this file to your `css` directory and `link` it in the `head` of your page. **Pay attention** to the ordering of your included CSS!
-* Re-create the responsive image gallery using [Foundation's Block Grid](http://foundation.zurb.com/docs/components/block_grid.html)
+## Exercise 5: Responsive, mobile-first layout
+One common technique when building web pages or small applications is to go "mobile-first". In terms of styling and UX, this means we would first design the page as it's meant to look on a mobile device, and then work our way up to add artifices for the larger devices (tablets, desktops, maybe TVs!)
 
-## Exercise 5: Foundation's responsive grid
-* Read about [Foundation's responsive grid](http://foundation.zurb.com/docs/components/grid.html)
-* Look at [Foundation's HTML templates](http://foundation.zurb.com/templates.html) for a ton of practical examples
-of how to use the grid
-* Create the following page using Foundation's responsive grid
+In terms of using media queries to achieve this, it means that our regular CSS would be the base CSS across all our devices, and then we would mostly write `min-width` media queries to target larger and larger screen sizes.
+
+One thing we have to do before getting started is choosing our **breakpoints** carefully. Since we're mobile-first, we will start with the mobile phone and work our way up. We will consider a device to be a "mobile phone" or "small screen" if it has a width of less than, say, `400px`. We will consider a device to be a "tablet" or "medium screen" if it has a width of less than -- again this is only an example -- `800px`. Then anything above `800px` would be considered a "desktop computer", or "large screen".
+
+Setting these breakpoints from the beginning means we don't have to do any guess work when writing our styles.
+
+* Reproduce the following page with a mobile, tablet and desktop layout
 * On desktop:
 * ![desktop](https://i.imgur.com/73r4tul.png)
 * On tablet:
@@ -138,3 +133,59 @@ of how to use the grid
 * On mobile:
 * ![mobile-1](https://i.imgur.com/oQv6on0.png)
 * ![mobile-2](https://i.imgur.com/PixTV2W.png)
+
+## Exercise 6 (challenge-y): responsive grid!
+For this challenging exercise, we will be reproducing a **basic version** of [Foundation's responsive grid](http://foundation.zurb.com/grid.html).
+
+Zurb's Foundation is a CSS framework. Basically, it defines CSS rules for a ton of classes, and lets you use these classes in your HTML to achieve some effects like nice looking buttons, dropdown menus, etc.
+
+One of its popular features is the responsive grid. The grid basically separates the vertical space of your page in 12 equal-width columns, and you can create sections that span any number of these columns.
+
+Why 12? Because 12 is divisible by 1, 2, 3, 4, 6 and 12! This means you can easily create a half/half layout (6 columns + 6 columns), or a third/third/third layout (4 cols, 4 cols, 4 cols) but also a quarter/quarter/quarter/quarter layout (3 cols, 3 cols, 3cols, 3cols) and so on. If we had divided our space in 10 columns, we could pretty much only do half/half because 10 is only divisible by 1, 2, 5 and 10.
+
+For this exercise, we will be re-creating a very basic version of Foundation's grid. Basically we will be adding the following classes to our CSS:
+
+```
+small-1: If an element has this class, it will take one column on small and up screen sizes (1/12 of the width)
+...
+small-6: if an element has this class, it will take 6 columns on small and up screen sizes (basically will take half the width)
+small-12: if an element has this class, it will take 100% of the width
+
+medium-1 ... medium-12: same as small, but only if the screen is medium up (meaning tablet or desktop)
+
+large-1 ... large-12: same as small, but only if the screen is large
+
+row: this class should wrap a set of responsive columns
+```
+
+Here are some examples to make it clearer:
+
+The following will create two sections that each take half of the screen, on mobile, tablet and desktop:
+```html
+<div class="row">
+  <div class="small-6">hello</div>
+  <div class="small-6">world</div>
+</div>
+```
+
+The following will create two sections that each take half of the screen, **but only on tablets and desktops**:
+```html
+<div class="row">
+  <div class="medium-6">hello</div>
+  <div class="medium-6">world</div>
+</div>
+```
+
+The following will create six sections. On mobile they will be 2 per row, on tablet and desktop they will be 3 per row:
+```html
+<div class="row">
+  <div class="small-6 medium-4">one</div>
+  <div class="small-6 medium-4">two</div>
+  <div class="small-6 medium-4">three</div>
+  <div class="small-6 medium-4">four</div>
+  <div class="small-6 medium-4">five</div>
+  <div class="small-6 medium-4">six</div>
+</div>
+```
+
+You can use the examples above to test the CSS you'll be writing :)
